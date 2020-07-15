@@ -61,12 +61,18 @@ div:nth-child(8) {
 }
 
 .flexContainer {
-    margin: 0 auto;
-    border: 1px solid black;
-    width: 300px;
-    height: 500px;
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-direction: column;
+}
+
+.flexItem{
+    flex-grow: 0;
+    flex-shrink: 1;
+    /* flex-shrink: 0; não permite a diminuição dos elementos*/
+    /* flex: 1 1; Forma abreviada de flex-grow + flex-shrink*/
+    flex-basis: 25%; /*Define a largura do elemento*/
+}
+
+.primeiro{
+    /* flex-grow: 2; */
+    /* flex-shrink: 2; */
 }
